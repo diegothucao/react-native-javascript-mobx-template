@@ -1,5 +1,6 @@
 # react-native-javascript-mobx-example
 This is an essential example to build react-native app using javascript and mobx
+
 Step to run
 1. Checkou this respo
 2. yarn install
@@ -13,3 +14,5 @@ references
 1. https://facebook.github.io/react-native/docs/tutorial
 2. https://github.com/jscomplete/react-native-essential-training
 3. https://mobx.js.org
+4. https://www.tutorialspoint.com/es6
+
