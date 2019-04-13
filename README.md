@@ -1,5 +1,5 @@
 # react-native-javascript-mobx-example
-This is an essential example to build react-native app using javascript and mobx
+This is an essential example to build react-native app using javascript and Mobx
 
 Step to run
 1. Checkou this respo
