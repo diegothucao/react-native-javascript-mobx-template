@@ -3,8 +3,8 @@ This is an essential example to build react-native app using Javascript and Mobx
 
 Step to run
 1. Checkou this respo
-2. yarn install
-3. react-native run-ios OR react-native run-android
+2. `yarn install`
+3. `react-native run-ios` OR `react-native run-android`
 
 Define store:
 ```javascript
