@@ -7,7 +7,7 @@ Step to run
 3. react-native run-ios
 
 Define store:
-```
+```javascript
 import { observable, action, runInAction, computed, autorun } from 'mobx';
 import ajax from '../util/ajax'
 
