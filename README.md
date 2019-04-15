@@ -53,6 +53,14 @@ export default class AppStore {
 }
 ```
 
+Call in components:
+
+```javascript 
+@inject("appStore") @observer
+class App extends React.Component {
+}
+```
+
 if you see any issue, please do not hesitate to create an issue here or can contact me via email: cao.trung.thu@gmail.com or skype: diego.thu.cao
 
 Give me A STAR if you see it is helpful for you.
