@@ -58,6 +58,22 @@ Call in components:
 ```javascript 
 @inject("appStore") @observer
 class App extends React.Component {
+
+  searchDeals = (searchTerm) => {
+    this.props.appStore.setSearchTerm(searchTerm)
+  }
+
+  setCurrentDeal = (dealId) => {
+    this.props.appStore.setCurrentDeal(dealId)
+  }
+
+  unsetCurrentDeal = () => {
+    this.props.appStore.unsetCurrentDeal()
+  }
+
+  render() {
+    const appStore = this.props.appStore
+}
 }
 ```
 
