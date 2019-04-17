@@ -35,14 +35,11 @@ class App extends React.Component {
         </View>
       )
     }
-    const dealsToDisplay =
-      appStore.deals.length > 0
-        ? appStore.deals
-        : []
+
     return (
       <View style={styles.main}>
         <SearchBar searchDeals={this.searchDeals} searchTerm={appStore.searchTerm.get()}/>
-        <DealList deals={dealsToDisplay} onItemPress={this.setCurrentDeal} />
+        <DealList deals={appStore.deals} onItemPress={this.setCurrentDeal} />
       </View>
     )
   }
@@ -52,14 +49,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   main: {
-    marginTop: 30,
+    marginTop: 30
   },
   header: {
-    fontSize: 40,
-  },
+    fontSize: 40
+  }
 })
 
 export default App

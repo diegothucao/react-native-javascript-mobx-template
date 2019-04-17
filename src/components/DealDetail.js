@@ -9,7 +9,7 @@ import {
   StyleSheet,
   Linking,
 } from 'react-native'
-import { observer, inject } from "mobx-react";
+import { observer, inject } from "mobx-react"
 
 import { priceDisplay } from '../util/util'
 
@@ -18,7 +18,7 @@ class DealDetail extends React.Component {
 
   static propTypes = {
     initialDealData: PropTypes.object.isRequired,
-    onBack: PropTypes.func.isRequired,
+    onBack: PropTypes.func.isRequired
   }
 
   async componentDidMount() {
@@ -81,44 +81,44 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 150,
-    backgroundColor: '#ccc',
+    backgroundColor: '#ccc'
   },
   title: {
     fontSize: 16,
     padding: 10,
     fontWeight: 'bold',
-    backgroundColor: 'rgba(237, 149, 45, 0.4)',
+    backgroundColor: 'rgba(237, 149, 45, 0.4)'
   },
   footer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    marginTop: 15,
+    marginTop: 15
   },
   info: {
-    alignItems: 'center',
+    alignItems: 'center'
   },
   user: {
-    alignItems: 'center',
+    alignItems: 'center'
   },
   cause: {
-    marginVertical: 10,
+    marginVertical: 10
   },
   price: {
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   avatar: {
     width: 60,
     height: 60,
-    borderRadius: 30,
+    borderRadius: 30
   },
   description: {
     borderColor: '#ddd',
     borderWidth: 1,
     borderStyle: 'dotted',
     margin: 10,
-    padding: 10,
-  },
+    padding: 10
+  }
 })
 
 export default DealDetail

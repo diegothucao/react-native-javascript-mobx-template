@@ -7,6 +7,7 @@ class SearchBar extends React.Component {
 
   static propTypes = {
     searchDeals: PropTypes.func.isRequired,
+    searchTerm: PropTypes.string.isRequired
   }
 
   debouncedSearchDeals = debounce(this.props.searchDeals, 300)
@@ -20,7 +21,7 @@ class SearchBar extends React.Component {
       <TextInput
         placeholder="Search All Deals"
         style={styles.input}
-        defaultValue={this.props.searchTerm}
+        value={this.props.searchTerm}
         onChangeText={this.handleChange}
       />
     )
@@ -30,8 +31,8 @@ class SearchBar extends React.Component {
 const styles = StyleSheet.create({
   input: {
     height: 40,
-    marginHorizontal: 16,
-  },
+    marginHorizontal: 16
+  }
 })
 
 export default SearchBar
