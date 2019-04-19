@@ -9,8 +9,8 @@ export default class DealDetailStore {
     @action async fetchDetail(data) {
         this.deal = data
         try {
-            const data = await ajax.fetchDealDetail(data.key)     
-                this.deal = data
+            const result = await ajax.fetchDealDetail(data.key)     
+                this.deal = result
         } catch (e) {
                 this.isLoading = false
                 this.isFailure = true
