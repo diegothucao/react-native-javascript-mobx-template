@@ -22,8 +22,7 @@ class DealDetail extends React.Component {
   }
 
   async componentDidMount() {
-    this.props.dealDetailStore.setInitialDeal(this.props.initialDealData)
-    this.props.dealDetailStore.fetchDetail(this.props.initialDealData.key)
+    this.props.dealDetailStore.fetchDetail(this.props.initialDealData)
   }
 
   openDealUrl = () => {

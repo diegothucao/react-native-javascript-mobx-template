@@ -6,15 +6,10 @@ export default class DealDetailStore {
     @observable isFailure = false
     @observable deal = undefined
 
-    @action setInitialDeal(data) {
+    @action async fetchDetail(data) {
         this.deal = data
-        this.isLoading = false
-    }
-
-    @action async fetchDetail(dealId) {
         try {
-            const data = await ajax.fetchDealDetail(dealId)     
-                this.isLoading = false
+            const data = await ajax.fetchDealDetail(data.key)     
                 this.deal = data
         } catch (e) {
                 this.isLoading = false

@@ -1,4 +1,4 @@
-import { observable, action, runInAction, computed, autorun } from 'mobx';
+import { observable, action, runInAction, computed } from 'mobx'
 import ajax from '../util/ajax'
 
 export default class AppStore {
