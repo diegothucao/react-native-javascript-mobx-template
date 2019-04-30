@@ -1,7 +1,7 @@
 # react-native-javascript-mobx-example
 This is an essential example to build react-native app using Javascript and Mobx
 
-1. Checkout this respo
+1. Clone the [repo](https://github.com/diegothucao/react-native-javascript-mobx-template)
 2. `yarn install` OR `npm install`
 3. `react-native eject`
 4. `react-native run-ios` OR `react-native run-android`
