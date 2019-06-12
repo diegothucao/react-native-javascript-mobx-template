@@ -1,4 +1,4 @@
-# react-native-javascript-mobx-example
+# React Native, Javascript and Mobx
 This is an essential example to build react-native app using Javascript and Mobx
 
 1. Clone the [repo](https://github.com/diegothucao/react-native-javascript-mobx-template)
